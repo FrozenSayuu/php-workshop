@@ -1,0 +1,12 @@
+{
+    "name": "sayuu/composer",
+    "authors": [
+        {
+            "name": "Tova0811",
+            "email": "tova.folkesson@gmail.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^2.56"
+    }
+}
