@@ -1,5 +1,5 @@
 {
-    "name": "php-workshop/week-three",
+    "name": "php-workshop/week-three/class-one",
     "autoload": {
         "psr-4": {
             "App\\Models\\": "app/Models"
