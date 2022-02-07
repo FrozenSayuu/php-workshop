@@ -6,7 +6,13 @@
             "email": "tova.folkesson@gmail.com"
         }
     ],
+    "autoload":{
+        "psr-4": {
+            
+        }
+    },
     "require": {
-        "nesbot/carbon": "^2.56"
+        "nesbot/carbon": "^2.56",
+        "fakerphp/faker": "^1.19"
     }
 }
