@@ -1,0 +1,17 @@
+{
+    "name": "php-workshop/10-eloquent-many-to-many",
+    "authors": [
+        {
+            "name": "Tova0811",
+            "email": "tova.folkesson@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\Models\\": "app/Models"
+        }
+    },
+    "require": {
+        "illuminate/database": "^8.82"
+    }
+}

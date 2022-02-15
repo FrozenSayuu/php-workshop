@@ -1,9 +1,7 @@
-<?php 
-
+<?php
 namespace App\Models;
 
 use \Illuminate\Database\Eloquent\Model;
-
 class User extends Model {
     
 	/**
@@ -15,4 +13,8 @@ class User extends Model {
 		return $this->first_name . ' ' . $this->last_name;
 	}
 
+	public function accounts()
+	{
+		return $this->hasMany(Account::class);
+	}
 }
