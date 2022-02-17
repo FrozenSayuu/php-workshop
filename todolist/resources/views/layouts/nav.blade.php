@@ -8,7 +8,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
   
           <li class="nav-item">
-            <a class="nav-link" href="{{route('todos.index')}}">Todos</a>
+            <a class="nav-link" href="{{ route('projects.index') }}">Projects</a>
           </li>
 
         </ul>

@@ -1,5 +1,6 @@
 @extends('layouts/app')
 @section('content')
+<?php use App\Models\Todo; ?>
 
       <h2>{{$todo->title}}</h2>
 
@@ -16,7 +17,12 @@
         @endif
       </p>
 
+      @if($todo->project_id)
+        <h4>Belongs to Project</h4>
+        <p>{{$project->title}}</p>
+      @endif
+
       <div>
-        <a href="{{route('todos.index')}}" class="btn btn-secondary">&laquo; Back</a>
+        <a href="{{route('projects.show', ['project' => $project])}}" class="btn btn-secondary">&laquo; Back</a>
       </div>
 @endsection
