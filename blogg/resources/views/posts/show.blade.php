@@ -1,0 +1,1 @@
+<a href="{{ route('posts.edit', ['post' => $post]) }}" class="btn btn-warning">Edit post</a>

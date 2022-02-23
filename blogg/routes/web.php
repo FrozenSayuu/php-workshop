@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	return view('welcome');
+});
+
+Auth::routes();
+
+Route::resource('/posts', PostController::class);
+
+/* Protected Routes */
+Route::middleware('auth')->group(function() {
+	Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+	//Route::get('posts/create', [PostController::class], 'create')->name('create');
 });
